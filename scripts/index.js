@@ -32,6 +32,7 @@ hexo.extend.tag.register("waterfall", function(args, content) {
  * 
  * slug: YYYY-MM-DD-HH-mm-ss
  */
+/**
 hexo.extend.filter.register('before_post_render', function(data) {
   if (!hexo.theme.config.permalink) return data
   if (data.layout === "post") {
@@ -39,3 +40,4 @@ hexo.extend.filter.register('before_post_render', function(data) {
     return data
   }
 });
+*/
