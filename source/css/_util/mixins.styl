@@ -38,15 +38,18 @@ card(margin, padding, minWidth, minHeight, borderRadius, number)
     margin: 0 (-(margin))
 
   .card-item
-    flex: 1 1 $basis
+    flex: 0 1 $basis
     &.large
-      flex: 1 1 $basis * 2
+      flex: 0 1 $basis * 2
     article
       margin: margin
       padding: padding
       min-width: minWidth
       min-height: minHeight
       border-radius: borderRadius
+      &.fixed
+        min-width: 50px!important
+
 
 // MainContainer 
 main-container-desktop()
